@@ -34,7 +34,35 @@
         AND CourseTitle LIKE '$course'";
 
 
+      // Result of Query
 
+      $result = mysql_query($sqlquery);
+      if (!$result) {
+        die('Invalid query: '.mysql_error());
+      }
+      echo '<h1>Results</h1>';
+      echo '<table border="1">
+      <tr>
+          <td>LastName</td>
+          <td>FirstName</td>
+          <td>FacID</td>
+      </tr>';
+      while ($row = mysql_fetch_assoc($result)){
+        echo '<tr>';
+        echo '<td>';
+        echo $row['LastName'];
+        echo '</td>';
+        cho '<td>';
+        echo $row['FirstName'];
+        echo '</td>';
+        cho '<td>';
+        echo $row['CourseTitle'];
+        echo '</td>';
+        echo '</tr>';
+      }
+      echo '</table>';
+
+      mysql_close($conn);
      ?>
 
   </body>
