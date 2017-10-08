@@ -23,6 +23,17 @@
       $firstname = $_POST["firstname"];
       $course = $_POST["course"];
 
+      // Query
+
+      $sqlquery = "SELECT LastName,
+        FirstName,
+        FacultyID AS 'FacID'
+        FROM Faculty
+        WHERE FirstName LIKE '$firstname'
+        AND LastName LIKE '$lastname'
+        AND CourseTitle LIKE '$course'";
+
+
 
      ?>
 
