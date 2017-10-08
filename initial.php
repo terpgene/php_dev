@@ -52,10 +52,10 @@
         echo '<td>';
         echo $row['LastName'];
         echo '</td>';
-        cho '<td>';
+        echo "string"; '<td>';
         echo $row['FirstName'];
         echo '</td>';
-        cho '<td>';
+        echo '<td>';
         echo $row['CourseTitle'];
         echo '</td>';
         echo '</tr>';
