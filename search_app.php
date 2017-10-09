@@ -30,7 +30,7 @@
      if (!$result){
        die('Invalid query: '.mysql_error());
      }
-     echo "<h1 align='center'> Faculty Search Results</h1>";
+     echo '<h1> Faculty Search Results</h1>';
      echo '<table border="1"
         <tr>
             <th>First Name</td>
