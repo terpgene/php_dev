@@ -7,7 +7,7 @@
   <body>
     <?php echo "<h3 align='center'> Faculty Database</h3>" ?>
 
-    <form action="Search.php" method="post">
+    <form action="search_app.php" method="post">
         Faculty ID: <input type="text" name="faculty_id"><br>
         <input type="submit" value="Submit">
 
